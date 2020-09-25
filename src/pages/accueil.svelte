@@ -8,14 +8,6 @@
     background-size: cover;
   }
 
-  section {
-  }
-
-  h1 {
-    font-size: 2rem;
-    padding: 1rem;
-  }
-
 </style>
 
 <!-- routify:options index=0 -->

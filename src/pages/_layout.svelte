@@ -34,11 +34,14 @@
     right: 0;
     bottom: 0;
   }
+  :global(h1) {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
   main.inset {
     bottom: 64px;
     overflow: hidden;
   }
-
   * :global(*) {
     text-align: center;
   }
