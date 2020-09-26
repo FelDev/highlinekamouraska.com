@@ -20,7 +20,7 @@
     active: !!$isActive(path)
   }));
   
-  $: urlOrder = urls.map(({href}) => href);
+  // $: urlOrder = urls.map(({href}) => href);
 </script>
 
 <style>
@@ -34,7 +34,7 @@
     right: 0;
     bottom: 0;
   }
-  main.inset {
+  div.inset {
     bottom: 64px;
     overflow: hidden;
   }
