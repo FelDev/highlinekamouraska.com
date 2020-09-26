@@ -34,10 +34,6 @@
     right: 0;
     bottom: 0;
   }
-  :global(h1) {
-    font-size: 2rem;
-    padding: 0 1rem;
-  }
   main.inset {
     bottom: 64px;
     overflow: hidden;
@@ -56,8 +52,8 @@
 </style>
 <div style="height: 100%">
 
-  <main class="inset" bind:offsetWidth={$width}>
+  <div class="inset" bind:offsetWidth={$width}>
     <slot decorator={TabsTransition} scoped={{ width }} />
-  </main>
+  </div>
   <BottomNav {urls} height="64px" />
 </div>
