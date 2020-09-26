@@ -11,4 +11,5 @@
 <main>
   <br />
   <h1>L'équipe</h1>
+  <p>Nos belles grosses faces.</p>
 </main>
