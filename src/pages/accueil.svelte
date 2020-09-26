@@ -1,3 +1,9 @@
+<script>
+  import { metatags } from '@roxi/routify'
+  metatags.title = 'Highline Kamouraska'
+  metatags.description = 'Le meilleur festival de highline au monde. (ok, ok midline là...)'
+</script>
+
 <style>
   main {
     background: #7fc5bb;
@@ -7,7 +13,9 @@
     background-position: right;
     background-size: cover;
   }
-
+  p { 
+    text-align: center;
+  }
 </style>
 
 <!-- routify:options index=0 -->

@@ -38,17 +38,7 @@
     bottom: 64px;
     overflow: hidden;
   }
-  * :global(*) {
-    text-align: center;
-  }
-  a {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 8px 16px;
-    background: #555;
-    color: white;
-  }
+
 </style>
 <div style="height: 100%">
 

@@ -9,4 +9,6 @@
 <main>
 <br>
   <h1>Les Retraites</h1>
+  <h2>C'est quoi ça une retraite?</h2>
+  <p>...</p>
 </main>
