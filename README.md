@@ -1,5 +1,7 @@
 # Highline Kamouraska
 Master branch currently available at [highlinekamouraska.netlify.app](https://highlinekamouraska.netlify.app/)
+
+CMS is available at [/admin](https://highlinekamouraska.netlify.app/admin). Access granted on invitation only.
 ## TODOs:
 - [ ] decide design for individual pages
 - [ ] implement large file processing (Netlify Large Media?)
