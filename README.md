@@ -1,3 +1,13 @@
+# Highline Kamouraska
+Master branch currently available at [highlinekamouraska.netlify.app](https://highlinekamouraska.netlify.app/)
+## TODOs:
+- [ ] decide design for individual pages
+- [ ] implement large file processing (Netlify Large Media?)
+- [ ] change DNS to highlinekamouraska.com
+
+---
+
+This project is based on the [routify starter](https://github.com/roxiness/routify-starter), original README.md ↓
 # routify-starter
 
 Starter template for [Routify](https://github.com/sveltech/routify)
