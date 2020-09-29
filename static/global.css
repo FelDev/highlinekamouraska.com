@@ -89,3 +89,8 @@ h1 {
 p, li {
 	text-align: left;
 }
+
+.content {
+	max-width: 65rem;
+	margin: auto;
+}

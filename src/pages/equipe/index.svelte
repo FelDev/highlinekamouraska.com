@@ -20,17 +20,17 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 2rem;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     justify-content: space-around;
   }
   li {
     list-style: none;
-    min-width: 15rem;
-    max-width: 30rem;
-    border: .1rem solid black;
+    min-width: 25rem;
+    max-width: 32rem;
+    box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
     border-radius: 1rem;
     padding: 1rem;
-    margin: 0 2rem;
+    margin: 2rem;
   }
 </style>
 
@@ -38,7 +38,6 @@
 
   <br />
   <h1>L'équipe</h1>
-  <p>Nos belles grosses faces.</p>
   <ul class="posts">
     {#each posts as {meta, path}}
       <li class="card"> 
@@ -53,6 +52,9 @@
       </li> -->
     {/each}
   </ul>
+  <section class="content">
+    <p>On pourrais inclure des liens vers vos comptes instagram, twitter, etc...</p>
+  </section>
 
 
 
