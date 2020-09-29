@@ -36,7 +36,7 @@
     padding: 0 16px;
     line-height: 100%;
     font-weight: 500;
-    color: #aaa;
+    color: #757575;
     text-transform: uppercase;
     text-decoration: none;
     width: 100%;
