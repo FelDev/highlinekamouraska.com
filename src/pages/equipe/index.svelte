@@ -41,7 +41,7 @@
 <ul class="posts">
   {#each posts as {meta, path}}
     <li class="card"> 
-      <img src="{meta.frontmatter.thumbnail}" alt="">
+      <img src="{meta.frontmatter.thumbnail}" alt="" width="150px" height="150px">
       <h2>{meta.frontmatter.name}</h2>
       <p>{@html marked(meta.frontmatter.bio)}</p>
     </li>
