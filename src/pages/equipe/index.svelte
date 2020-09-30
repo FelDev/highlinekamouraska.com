@@ -36,26 +36,26 @@
 
 
 
-  <br />
-  <h1>L'équipe</h1>
-  <ul class="posts">
-    {#each posts as {meta, path}}
-      <li class="card"> 
-        <img src="{meta.frontmatter.thumbnail}" alt="">
-        <h2>{meta.frontmatter.name}</h2>
-        <p>{@html marked(meta.frontmatter.bio)}</p>
-      </li>
-      
-      <!-- <li class="card"> 
-        <a class="title" href={$url(path)}>{meta.frontmatter.name}</a>
-        {@html marked(meta.frontmatter.name)}
-      </li> -->
-    {/each}
-  </ul>
-  <section class="content">
-    <p>On pourrais inclure des liens vers vos comptes instagram, twitter, etc...</p>
-  </section>
-
+<br />
+<h1>L'équipe</h1>
+<ul class="posts">
+  {#each posts as {meta, path}}
+    <li class="card"> 
+      <img src="{meta.frontmatter.thumbnail}" alt="">
+      <h2>{meta.frontmatter.name}</h2>
+      <p>{@html marked(meta.frontmatter.bio)}</p>
+    </li>
+    
+    <!-- <li class="card"> 
+      <a class="title" href={$url(path)}>{meta.frontmatter.name}</a>
+      {@html marked(meta.frontmatter.name)}
+    </li> -->
+  {/each}
+</ul>
+<section class="content">
+  <p>On pourrais inclure des liens vers vos comptes instagram, twitter, etc...</p>
+</section>
+<br>
 
 
 
