@@ -22,8 +22,13 @@
     text-align: center;
     text-shadow: 0 0 0.5rem #ffe198; 
   }
-  @media (max-width:500px) {
+  
+  h1 {
+    font-size: 7vw;
+  }
+  @media (max-width:768px) {
     h1 {
+      font-size: 5rem;
       margin-top: 0.1rem;
       margin-bottom: 0.25rem;
       margin: 0;
