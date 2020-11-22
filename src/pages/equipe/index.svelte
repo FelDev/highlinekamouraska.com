@@ -2,7 +2,7 @@
   import { url, layout } from "@roxi/routify";
   import marked from "marked";
 
-  const posts = $layout.parent.children
+  const posts = $layout.children
     .filter((c) => c.meta["frontmatter"])
     .sort((a, b) => b.meta["frontmatter"].order < a.meta["frontmatter"].order ? 1 : -1);
   console.log('@posts: ', posts);
