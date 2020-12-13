@@ -9,7 +9,12 @@
   const cmsData = getCMSData($layout, "accueil")
 
   import {fade} from 'svelte/transition'
-	
+  // import { prefetch } from '@roxi/routify'
+  // prefetch('/images/hero_1.jpg');
+  // prefetch('/images/hero_2.jpg');
+  // prefetch('/images/hero_3.jpg');
+  // prefetch('/images/hero_4.jpg');
+  // prefetch('/images/hero_5.jpg');
 	const carouselPhotos = [
 		'/images/hero_1.jpg',
 		'/images/hero_2.jpg',
@@ -21,14 +26,14 @@
 	let index = 0
 	
 	setInterval(() => {
-  	  		index = (index + 1) % carouselPhotos.length
+    index = (index + 1) % carouselPhotos.length
   }, 5000);
 
 </script>
 
 <style>
   main {
-    background: #7fc5bb;
+    /* background: #7fc5bb; */
     height: 100%;
     overflow: auto;
     background-image: url(/images/hero.jpg);
@@ -63,8 +68,7 @@
     left:0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: right;
+    object-fit: cover;
   }
 </style>
 
@@ -73,13 +77,21 @@
   <h1>{cmsData.title}</h1>
   <!-- <p>{cmsData.text}</p> -->
   {#each [carouselPhotos[index]] as src (index)}
+    <img 
+      class="bg" 
+      transition:fade 
+      alt="" 
+      src="{src}"
+    />	
+  {/each}
+  <!-- {#each [carouselPhotos[index]] as src (index)}
     <div 
       class="bg" 
       transition:fade 
       alt="" 
       style="background-image: url({src})"
     />	
-  {/each}
+  {/each} -->
   <!-- <h1>Highline Kamouraska</h1> -->
   <!-- <p>Le meilleur festival de tout les festivaux dans la cours à Élyme!!!</p> -->
   <!-- <img src="/images/hero.jpg" alt=""> -->
