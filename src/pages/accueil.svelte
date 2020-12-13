@@ -8,7 +8,6 @@
   import { getCMSData } from "./_components/GetCMSData.svelte"
   const cmsData = getCMSData($layout, "accueil")
 
-  import {fade} from 'svelte/transition'
   // import { prefetch } from '@roxi/routify'
   // prefetch('/images/hero_1.jpg');
 	
@@ -16,7 +15,7 @@
   
   setTimeout(() => {
     changeImage(0);
-  }, 5000);
+  }, 4000);
 
   function changeImage(i) {
     let nextI = i+1 === images.length ? 0 : i+1;
@@ -72,6 +71,10 @@
     opacity: 1;
   }
 
+  .objectPosition-right {
+    object-position:right;
+  }
+
 </style>
 
 <main>
@@ -80,7 +83,7 @@
   <!-- <p>{cmsData.text}</p> -->
   
   <img 
-    class="visible"
+    class="visible objectPosition-right"
     alt="" 
     src="/images/hero_1.jpg"
   />
