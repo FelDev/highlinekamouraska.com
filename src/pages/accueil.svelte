@@ -11,34 +11,29 @@
   import {fade} from 'svelte/transition'
   // import { prefetch } from '@roxi/routify'
   // prefetch('/images/hero_1.jpg');
-  // prefetch('/images/hero_2.jpg');
-  // prefetch('/images/hero_3.jpg');
-  // prefetch('/images/hero_4.jpg');
-  // prefetch('/images/hero_5.jpg');
-	const carouselPhotos = [
-		'/images/hero_1.jpg',
-		'/images/hero_2.jpg',
-		'/images/hero_3.jpg',
-		'/images/hero_4.jpg',
-		'/images/hero_5.jpg',
-	]
 	
-	let index = 0
-	
-	setInterval(() => {
-    index = (index + 1) % carouselPhotos.length
+  let images = document.getElementsByTagName('img');
+  
+  setTimeout(() => {
+    changeImage(0);
   }, 5000);
+
+  function changeImage(i) {
+    let nextI = i+1 === images.length ? 0 : i+1;
+    images[i].classList.remove('visible');
+    images[nextI].classList.add('visible');
+
+    setTimeout(() => {
+      changeImage(nextI)
+    }, 5000);
+  }
 
 </script>
 
 <style>
   main {
-    /* background: #7fc5bb; */
     height: 100%;
     overflow: auto;
-    background-image: url(/images/hero.jpg);
-    background-position: right;
-    background-size: cover;
   }
   p { 
     text-align: center;
@@ -61,8 +56,10 @@
       margin: 0;
     }
   }
-
-  .bg {
+  
+  img {
+    opacity: 0;
+    transition: 2s;
     position: absolute;
     top:0;
     left:0;
@@ -70,28 +67,40 @@
     height: 100%;
     object-fit: cover;
   }
+
+  img.visible {
+    opacity: 1;
+  }
+
 </style>
 
 <main>
   <br />
   <h1>{cmsData.title}</h1>
   <!-- <p>{cmsData.text}</p> -->
-  {#each [carouselPhotos[index]] as src (index)}
-    <img 
-      class="bg" 
-      transition:fade 
-      alt="" 
-      src="{src}"
-    />	
-  {/each}
-  <!-- {#each [carouselPhotos[index]] as src (index)}
-    <div 
-      class="bg" 
-      transition:fade 
-      alt="" 
-      style="background-image: url({src})"
-    />	
-  {/each} -->
+  
+  <img 
+    class="visible"
+    alt="" 
+    src="/images/hero_1.jpg"
+  />
+  <img 
+    alt="" 
+    src="/images/hero_2.jpg"
+  />
+  <img 
+    alt="" 
+    src="/images/hero_3.jpg"
+  />
+  <img 
+    alt="" 
+    src="/images/hero_4.jpg"
+  />
+  <img 
+    alt="" 
+    src="/images/hero_5.jpg"
+  />
+
   <!-- <h1>Highline Kamouraska</h1> -->
   <!-- <p>Le meilleur festival de tout les festivaux dans la cours à Élyme!!!</p> -->
   <!-- <img src="/images/hero.jpg" alt=""> -->
