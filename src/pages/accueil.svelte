@@ -15,7 +15,7 @@
   
   setTimeout(() => {
     changeImage(0);
-  }, 4000);
+  }, 3000);
 
   function changeImage(i) {
     let nextI = i+1 === images.length ? 0 : i+1;

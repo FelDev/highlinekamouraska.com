@@ -8,7 +8,7 @@
 </script>
 <style>
   main {
-    background: #8fD5Db;
+    /* background: #8fD5Db; */
     height: 100%;
     overflow: auto;
   }
@@ -16,11 +16,23 @@
 
 <!-- routify:options index=1 -->
 <main>
-  <br />
-  <h1>{cmsData.title}</h1>
+  <h1 id="svgLineTitle">
+    <svg viewBox="0 0 500 100" fill="none">
+      <path id="curve" d="M-2 5C265 163 531 2 531 -20" stroke="#70c79e" stroke-width="1.5" />
+      <text width="500">
+        <textPath xlink:href="#curve" fill="#151515" startOffset="22%">
+          {cmsData.title}
+        </textPath>
+      </text>
+    </svg>
+  </h1> 
+  
+  <!-- <h1>{cmsData.title}</h1> -->
+  
   <section class="content">
     {@html marked(cmsData.text)}
   </section>
+
   <!-- <h1>Le Festival</h1>
   <h2>C'est quoi un festival de highline?</h2>
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis necessitatibus ipsum harum. Maiores voluptate, tempora voluptatibus assumenda dicta voluptatum, omnis quasi iusto molestiae vitae a? Dolorem eaque repellat voluptates velit.</p>

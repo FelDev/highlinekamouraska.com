@@ -5,7 +5,7 @@
 </script>
 <style>
   main {
-    background: #7fc5bb;
+    /* background: #7fc5bb; */
     height: 100%;
     overflow: auto;
   }
@@ -73,7 +73,7 @@
     display: block;
   }
   input:checked {
-    border: 0.5rem solid #333;
+    border: 0.5rem solid #151515;
     border-radius: 0.5rem;
   }
 
@@ -89,9 +89,20 @@
 
 </style>
 
-<main>
-  <br />
-  <h1>Historique</h1>
+<main>  
+  <h1 id="svgLineTitle">
+    <svg viewBox="0 0 500 100" fill="none">
+      <path id="curve" d="M-2 5C265 163 531 2 531 -20" stroke="#08d5b1" stroke-width="1.5" />
+      <text width="500">
+        <textPath xlink:href="#curve" fill="#151515" startOffset="23%">
+          Historique
+        </textPath>
+      </text>
+    </svg>
+  </h1> 
+
+  <!-- <h1>Historique</h1> -->
+
   <section class="content">
     <div id="storyLengthButtons">
       <label>
