@@ -24,6 +24,7 @@
     justify-content: space-around;
   }
   li {
+    background: #88F0D0;
     list-style: none;
     min-width: 25rem;
     max-width: 32rem;

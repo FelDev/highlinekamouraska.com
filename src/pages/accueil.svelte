@@ -15,7 +15,7 @@
   
   setTimeout(() => {
     changeImage(0);
-  }, 3000);
+  }, 2500);
 
   function changeImage(i) {
     let nextI = i+1 === images.length ? 0 : i+1;
@@ -37,7 +37,7 @@
   p { 
     text-align: center;
     text-shadow: 0 0 0.5rem #ffe198; 
-    /* position: relative; */
+    position: relative;
     /* z-index: 10; */
   }
   

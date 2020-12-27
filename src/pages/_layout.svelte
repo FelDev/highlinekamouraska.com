@@ -8,10 +8,10 @@
   const color = writable();
   const _urls = [
     ["./accueil", "🏠", "#FF6500"],
-    ["./festival", "Festival", "#8FD5DB"],
-    ["./retraite", "Retraites", "#A1FAC3"],
-    ["./historique", "Historique", "#0bF5CC"],
-    ["./equipe", "L'équipe", "#88F0d0"],
+    ["./festival", "Festival", "#70C79E"],
+    ["./retraite", "Retraites", "#70C79E"],
+    ["./historique", "Historique", "#70C79E"],
+    ["./equipe", "L'équipe", "#70C79E"],
   ];
   $: urls = _urls.map(([path, name, color]) => ({
     name,

@@ -1,6 +1,8 @@
 <script>
   import { url, isActive } from "@roxi/routify";
   export let urls, height;
+  import { prefetch } from '@roxi/routify'
+  
   let linkElems = [];
   let overlay;
   let clientWidth
@@ -66,6 +68,7 @@
       style="line-height: {height}"
       {href}
       class:active
+      use:prefetch
       use:saveElement>
       {name}
     </a>
