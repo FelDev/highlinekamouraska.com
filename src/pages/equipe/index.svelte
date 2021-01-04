@@ -32,6 +32,8 @@
     border-radius: 1rem;
     padding: 1rem;
     margin: 2rem;
+    flex-grow: 1;
+    box-shadow: 0rem 0rem 1.5rem 0.1rem green;
   }
 </style>
 

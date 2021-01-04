@@ -32,7 +32,9 @@
   <section class="content">
     {@html marked(cmsData.text)}
     <h2>Quelques images...</h2>
-    <iframe title="Vidéo: Highline Kamouraska - Drone Teaser" width="560" height="315" src="https://www.youtube.com/embed/GUISQGrUUAw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video-responsive">
+      <iframe title="Vidéo: Highline Kamouraska - Drone Teaser" width="560" height="315" src="https://www.youtube.com/embed/GUISQGrUUAw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </section>
   <!-- <h1>Le Festival</h1>
   <h2>C'est quoi un festival de highline?</h2>

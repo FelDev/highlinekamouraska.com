@@ -104,6 +104,7 @@
   <!-- <h1>Historique</h1> -->
 
   <section class="content">
+    <br>
     <div id="storyLengthButtons">
       <label>
         <input type=radio bind:group={version} value={"short"}>

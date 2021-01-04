@@ -20,9 +20,11 @@
 
   <!-- <h1>Les Retraites</h1> -->
   
-  <h2>C'est quoi ça une retraite?</h2>
   <div class="content">
-    <iframe title="Vidéo: Retraite Highline Retreats Kamouraska - Julien Desforges" width="560" height="315" src="https://www.youtube.com/embed/2DAIWtBQxk0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>C'est quoi ça une retraite?</h2>
+    <div class="video-responsive">
+      <iframe title="Vidéo: Retraite Highline Retreats Kamouraska - Julien Desforges" width="560" height="315" src="https://www.youtube.com/embed/2DAIWtBQxk0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
   
 

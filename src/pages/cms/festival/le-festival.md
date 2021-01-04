@@ -4,10 +4,10 @@ text: >-
   ## Liens Importants
 
 
-  [Événement Facebook](https://www.facebook.com/events/290425702057190/)
-
-
   [Formulaire d'inscription](https://docs.google.com/forms/d/e/1FAIpQLSd8j48YUwKrdqsjOzWQ56Qt0JYxTsRfssTybA8_2xfAirK0rA/viewform)
+
+
+  [Événement Facebook](https://www.facebook.com/events/290425702057190/)
 
 
   [Carte géographique](https://www.google.com/maps/d/viewer?mid=1bh3dW-k2Ba1nbHpFBG7TV9xhk2c&hl=en&ll=47.62644773280668%2C-69.76509513925649&z=15)
@@ -33,8 +33,4 @@ text: >-
   * Être responsable de sa sécurité
 
 
-  ## Achète tes billets par là ↓
-
-
-  laruchequebec.com (right?)
 ---
