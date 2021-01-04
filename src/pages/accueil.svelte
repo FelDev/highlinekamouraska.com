@@ -19,8 +19,12 @@
 
   function changeImage(i) {
     let nextI = i+1 === images.length ? 0 : i+1;
-    images[i].classList.remove('visible');
-    images[nextI].classList.add('visible');
+    try {
+      images[i].classList.remove('visible');
+      images[nextI].classList.add('visible');
+    } catch (err) {
+      return; // then we moved from /accueil, no biggie
+    }
 
     setTimeout(() => {
       changeImage(nextI)

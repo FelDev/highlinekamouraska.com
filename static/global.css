@@ -154,6 +154,7 @@ p, li {
 .content {
 	max-width: 65rem;
 	margin: auto;
+	padding: 1rem;
 }
 
 .dark-bg {
