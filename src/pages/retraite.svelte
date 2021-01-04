@@ -1,8 +1,8 @@
 <style>
-  main {
+  /* main { */
     /* background: #a1fac3; */
-    height: 100%;
-  }
+    /* height: 100%; */
+  /* } */
 </style>
 
 <!-- routify:options index=2 -->

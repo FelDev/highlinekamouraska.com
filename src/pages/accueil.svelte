@@ -34,10 +34,6 @@
 </script>
 
 <style>
-  main {
-    height: 100%;
-    overflow: auto;
-  }
   p { 
     text-align: center;
     text-shadow: 0 0 0.5rem #ffe198; 

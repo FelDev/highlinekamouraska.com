@@ -7,11 +7,12 @@
   
 </script>
 <style>
-  main {
+  /* #DELETE? not sure why this was not in global.css everywhere from the beginning */
+  /* main { */
     /* background: #8fD5Db; */
-    height: 100%;
-    overflow: auto;
-  }
+    /* height: 100%; */
+    /* overflow: auto; */
+  /* } */
 </style>
 
 <!-- routify:options index=1 -->

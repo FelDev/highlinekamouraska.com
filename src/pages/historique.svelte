@@ -4,11 +4,11 @@
   let version = "short";
 </script>
 <style>
-  main {
-    /* background: #7fc5bb; */
+  /* main {
+     #DELETE? not sure why this was not in global.css everywhere from the beginning 
     height: 100%;
     overflow: auto;
-  }
+  } */
 
   #storyLengthButtons {
     display: flex;
