@@ -1,3 +1,7 @@
+:root {
+  --dark-tree-green: #112611;
+}
+
 noscript {
 	z-index: 1;
 	position: absolute;
@@ -16,7 +20,6 @@ html, body {
 }
 
 body {
-	color: #151515;
 	margin: 0;
 	padding: 8px;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -24,12 +27,14 @@ body {
 }
 
 main {
-	background: linear-gradient(180deg, #009fff 0%, #62c4ff 100%);
-	padding: 1rem;
+	background: var(--dark-tree-green);
+	color: #e9f0e9;
+	/* padding: 1rem; */
 }
 
 a {
-	color: rgb(0,100,200);
+	/* color: rgb(0,100,200); */
+	color: rgb(111 178 245);
 	text-decoration: none;
 }
 
@@ -39,6 +44,7 @@ a:hover {
 
 a:visited {
 	color: rgb(0,80,160);
+	color: rgb(111 178 245);
 }
 
 label {
@@ -97,19 +103,47 @@ h1 {
 	font-family: 'flamante';
 	padding: 0 1rem;
 	margin-top: 0.1rem;
+	color: #212121;
 }
 
 h1#svgLineTitle {
 	font-size: 6rem;
 	padding: 3rem 0;
-	margin: 0 0 0 -1rem;
+	/* margin: 0 0 0 -1rem; */
+	background: linear-gradient(180deg, #009fff 0%, #62c4ff 100%);
+	margin: 0;
 	width: 100vw;
+	position: relative;
 }
+
+#svgLineTitle::after {
+	content:"";
+  background: 
+    linear-gradient(319deg, var(--dark-tree-green) 1.2rem, transparent 1.3rem) 0px 2.0rem,
+    linear-gradient(40deg, var(--dark-tree-green) 1.2rem, transparent 1.3rem) -1px 2.0rem,
+    linear-gradient(319deg, var(--dark-tree-green) 1.75rem, transparent 1.8rem) 0 -3.5rem,
+    linear-gradient(40deg, var(--dark-tree-green) 1.75rem, transparent 1.8rem) -1px -3.5rem,
+    linear-gradient(319deg, var(--dark-tree-green) 2.25rem, transparent 2.3rem) 0 -2rem,
+    linear-gradient(40deg, var(--dark-tree-green) 2.25rem, transparent 2.3rem) -1px -2rem;
+  background-repeat: repeat;
+  background-size: 6.5rem 7rem;
+	height:5rem;
+	width: 100vw;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+}
+
+/* @media screen and (max-width: 600px) {
+	h1#svgLineTitle {
+		font-size: 8rem;
+	}
+} */
 
 @media screen and (min-height: 600px) {
 	h1 {
 		font-size: 5rem;
-		margin-top: 2rem; 
+		/* margin-top: 2rem;  */
 	}
 }
 
@@ -120,4 +154,15 @@ p, li {
 .content {
 	max-width: 65rem;
 	margin: auto;
+}
+
+.dark-bg {
+	color: #151515;	
+}
+.dark-bg a { 
+	color: rgb(0,100,200);
+}
+
+.dark-bg a:visited { 
+	color: rgb(0,80,160);
 }

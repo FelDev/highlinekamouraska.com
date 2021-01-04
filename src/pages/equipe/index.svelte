@@ -37,11 +37,19 @@
 
 
 
-<br />
-<h1>L'équipe</h1>
+<h1 id="svgLineTitle">
+  <svg viewBox="0 0 500 100" fill="none">
+    <path id="curve" d="M-2 5C265 163 531 2 531 -20" stroke="#08d5b1" stroke-width="1.5" />
+    <text width="500">
+      <textPath xlink:href="#curve" fill="#151515" startOffset="23%">
+        L'équipe
+      </textPath>
+    </text>
+  </svg>
+</h1>
 <ul class="posts">
   {#each posts as {meta, path}}
-    <li class="card"> 
+    <li class="card dark-bg">
       <img src="{meta.frontmatter.thumbnail}" alt="" width="150px" height="150px">
       <h2>{meta.frontmatter.name}</h2>
       <p>{@html marked(meta.frontmatter.bio)}</p>
