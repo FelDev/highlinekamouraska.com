@@ -4,7 +4,7 @@
   metatags.title = 'Highline Kamouraska'
   metatags.description = 'Le meilleur festival de highline au monde. (ok, ok midline là...)'
 
-  import { layout } from "@roxi/routify";
+  import { layout, beforeUrlChange } from "@roxi/routify";
   import { getCMSData } from "./_components/GetCMSData.svelte"
   const cmsData = getCMSData($layout, "accueil")
 
@@ -13,24 +13,23 @@
 	
   let images = document.getElementsByTagName('img');
   
-  setTimeout(() => {
+  let timeout = setTimeout(() => {
     changeImage(0);
   }, 2500);
 
   function changeImage(i) {
     let nextI = i+1 === images.length ? 0 : i+1;
-    try {
-      images[i].classList.remove('visible');
-      images[nextI].classList.add('visible');
-    } catch (err) {
-      return; // then we moved from /accueil, no biggie
-    }
-
-    setTimeout(() => {
+    images[i].classList.remove('visible');
+    images[nextI].classList.add('visible');
+    timeout = setTimeout(() => {
       changeImage(nextI)
     }, 5000);
   }
 
+  $beforeUrlChange(() => {
+    clearTimeout(timeout);
+    return true;
+})
 </script>
 
 <style>
