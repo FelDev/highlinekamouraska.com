@@ -52,3 +52,17 @@ collections:
       - { name: "title", label: "Titre (<h1>)", widget: "string" }
       - { name: "importantLinks", label: "Liens Important", widget: "markdown" }
       - { name: "cestQuoi", label: "C'est quoi un festival?", widget: "markdown" }
+      - { name: "aSavoirT", label: " Titre pour section 'Choses à savoir'", widget: "string" }
+      - { name: "feuT", label: "Feu - Titre", widget: "string" }
+      - { name: "feuD", label: "Feu - Description", widget: "string" }
+      - { name: "dechetT", label: "Déchêt - Titre", widget: "string" }
+      - { name: "dechetD", label: "Déchêt - Description", widget: "string" }
+      - { name: "parkingT", label: "Parking - Titre", widget: "string" }
+      - { name: "parkingD", label: "Parking - Description", widget: "string" }
+      - { name: "securiteT", label: "Securite - Titre", widget: "string" }
+      - { name: "securiteD", label: "Securite - Description", widget: "string" }
+      - { name: "respectT", label: "Respect - Titre", widget: "string" }
+      - { name: "respectD", label: "Respect - Description", widget: "string" }
+      - { name: "contributionT", label: "Contribution - Titre", widget: "string" }
+      - { name: "contributionD", label: "Contribution - Description", widget: "string" }
+        

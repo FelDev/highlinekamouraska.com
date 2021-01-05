@@ -19,4 +19,19 @@ cestQuoi: >-
 
 
   C'est du camping, des nouveaux amis, de la jonglerie autour du feu le soir... C'est le fun!
+aSavoirT: Choses à savoir
+feuT: Ne pas faire de feu
+feuD: Il y a UN endroit pour faire des feux.
+dechetT: Zéro déchêts
+dechetD: Vous devez rapportez tout ce que vous amener sur le site, surtout vos déchêts.
+parkingT: Stationnez à l'entrée
+parkingD: Ne montez pas dans l'entrée privé des propriétaires même si vous avez un 4x4.
+securiteT: Sécurité
+securiteD: Vous êtes responsable de votre propre sécurité et de celles des
+  autres. Assurez-vous de connaître vos limites.
+respectT: Respect
+respectD: Respectez la nature, les lieux et les gens.
+contributionT: Contribution
+contributionD: On s'attend à ce que vous contribuez au festival. Soit de façon
+  monétaire ou par un échange de travail (donner un peu de votre temps).
 ---
