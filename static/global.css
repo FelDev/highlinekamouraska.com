@@ -31,7 +31,6 @@ main {
 	overflow: auto;
 	background: var(--dark-tree-green);
 	color: #e9f0e9;
-	/* padding: 1rem; */
 }
 
 a {
@@ -99,6 +98,13 @@ button:focus {
 
 h1,h2,h3,h4,h5,h6 {
 	text-align: center;
+	/* color: #F2A359; */
+	/* color: #9edbff; */
+	/* color: #B5DFCA; */
+	/* color: #C5E7E2; */
+	/* color: #AD9BAA; */
+	color: #F7F3E3;
+	/* color: #ECF0F1; */
 }
 h1 {
 	font-size: 3.5rem;
@@ -113,6 +119,7 @@ h1#svgLineTitle {
 	padding: 3rem 0 4rem;
 	/* margin: 0 0 0 -1rem; */
 	background: linear-gradient(180deg, #009fff 0%, #62c4ff 100%);
+	text-shadow: 0rem 0rem 15rem #eee;
 	margin: 0;
 	width: 100vw;
 	position: relative;
@@ -137,7 +144,7 @@ h1#svgLineTitle {
 }
 
 h2 {
-	font-size: 3.6rem;
+	font-size: 4rem;
 	margin-top: 5rem;
 }
 
@@ -164,7 +171,7 @@ p, li {
 	padding: 1rem 1rem 3rem;
 }
 
-.dark-bg {
+.dark-bg * {
 	color: #151515;	
 }
 .dark-bg a { 

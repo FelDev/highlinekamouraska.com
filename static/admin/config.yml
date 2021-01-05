@@ -50,4 +50,5 @@ collections:
     slug: "{{name}}"
     fields:
       - { name: "title", label: "Titre (<h1>)", widget: "string" }
-      - { name: "text", label: "texte", widget: "markdown" }
+      - { name: "importantLinks", label: "Liens Important", widget: "markdown" }
+      - { name: "cestQuoi", label: "C'est quoi un festival?", widget: "markdown" }
