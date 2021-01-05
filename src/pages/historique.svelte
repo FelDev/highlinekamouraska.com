@@ -1,6 +1,12 @@
 <!-- routify:options index=3 -->
 <script>
-  import { fade, slide } from 'svelte/transition'
+  import { fade, slide } from 'svelte/transition';
+  import { layout } from "@roxi/routify";
+  import marked from "marked";
+  import { getCMSData } from "./_components/GetCMSData.svelte"
+  const cmsData = getCMSData($layout, "historique")
+  console.log('@cmsData: ', cmsData);
+
   let version = "short";
 </script>
 <style>
@@ -121,47 +127,11 @@
 
     {#if version === "short"}
       <div id="short" in:fade={{ delay: 300, duration: 300 }} out:slide={{ duration: 300 }}>
-        <p>Julien et Maxime cherchaient une place ou dormir finalement et tombèrent en amour.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
+        {@html marked(cmsData.short.text)}
       </div>
     {:else}
       <div id="long" in:fade={{ delay: 300, duration: 300 }} out:slide={{ duration: 300 }}> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit libero qui vitae adipisci enim pariatur, doloremque nam repudiandae velit at ipsa? Vel officiis amet esse officia at dolores saepe.</p>
+        {@html marked(cmsData.long.text)}
       </div>
     {/if}
 

@@ -6,7 +6,7 @@
 
   import { layout, beforeUrlChange } from "@roxi/routify";
   import { getCMSData } from "./_components/GetCMSData.svelte"
-  const cmsData = getCMSData($layout, "accueil")
+  const cmsData = getCMSData($layout, "accueil").homepage
 
   // import { prefetch } from '@roxi/routify'
   // prefetch('/images/hero_1.jpg');

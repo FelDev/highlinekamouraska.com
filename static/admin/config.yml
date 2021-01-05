@@ -40,6 +40,7 @@ collections:
     create: false # Allow users to create new documents in this collection
     slug: "{{title}}"
     fields:
+      - { label: 'cmsID', name: 'cmsID', widget: 'hidden', default: 'homepage' }
       - { name: "title", label: "Titre (<h1>)", widget: "string" }
       - { name: "text", label: "texte", widget: "markdown" }
   - name: "festival"
@@ -49,6 +50,7 @@ collections:
     create: false # Allow users to create new documents in this collection
     slug: "{{name}}"
     fields:
+      - { label: 'cmsID', name: 'cmsID', widget: 'hidden', default: 'festival' }
       - { name: "title", label: "Titre (<h1>)", widget: "string" }
       - { name: "importantLinks", label: "Liens Important", widget: "markdown" }
       - { name: "cestQuoi", label: "C'est quoi un festival?", widget: "markdown" }
@@ -65,4 +67,19 @@ collections:
       - { name: "respectD", label: "Respect - Description", widget: "string" }
       - { name: "contributionT", label: "Contribution - Titre", widget: "string" }
       - { name: "contributionD", label: "Contribution - Description", widget: "string" }
+  - name: "Historique"
+    label: "Historique"
+    files:
+      - name: "short"
+        label: "Version courte"
+        file: "src/pages/cms/historique/short.md"
+        fields:
+          - { label: 'cmsID', name: 'cmsID', widget: 'hidden', default: 'short' }
+          - { name: "text", label: "texte", widget: "markdown" }
+      - name: "long"
+        label: "Version longue"
+        file: "src/pages/cms/historique/long.md"
+        fields:
+          - { label: 'cmsID', name: 'cmsID', widget: 'hidden', default: 'long' }
+          - { name: "text", label: "Texte", widget: "markdown" }
         

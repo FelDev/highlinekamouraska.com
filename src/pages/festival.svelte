@@ -2,7 +2,7 @@
   import { layout } from "@roxi/routify";
   import marked from "marked";
   import { getCMSData } from "./_components/GetCMSData.svelte"
-  const cmsData = getCMSData($layout, "festival")
+  const cmsData = getCMSData($layout, "festival").festival
   console.log('@cmsData: ', cmsData);
   
 </script>

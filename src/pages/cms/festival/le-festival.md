@@ -1,5 +1,6 @@
 ---
 title: Le Festival
+cmsID: festival
 importantLinks: >-
   ## Liens Importants
 
