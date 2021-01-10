@@ -5,7 +5,7 @@
   const posts = $layout.children
     .filter((c) => c.meta["frontmatter"])
     .sort((a, b) => b.meta["frontmatter"].order < a.meta["frontmatter"].order ? 1 : -1);
-  console.log('@posts: ', posts);
+  // console.log('@posts: ', posts);
   
 </script>
 <style>

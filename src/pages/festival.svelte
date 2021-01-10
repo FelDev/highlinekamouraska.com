@@ -3,7 +3,7 @@
   import marked from "marked";
   import { getCMSData } from "./_components/GetCMSData.svelte"
   const cmsData = getCMSData($layout, "festival").festival
-  console.log('@cmsData: ', cmsData);
+  // console.log('@cmsData: ', cmsData);
   
 </script>
 <style>

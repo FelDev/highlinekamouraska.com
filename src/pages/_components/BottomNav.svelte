@@ -17,6 +17,10 @@
     target.style.width = source.clientWidth + "px";
     target.style.height = source.clientHeight + "px";
   }
+  urls.forEach( url => {
+    // would rather use `use:prefetch` inside a tag, but weird bug when I do.
+    prefetch(url.href)
+  })
 
   const saveElement = el => (linkElems = [...linkElems, el]);
 </script>
@@ -68,7 +72,6 @@
       style="line-height: {height}"
       {href}
       class:active
-      use:prefetch
       use:saveElement>
       {name}
     </a>

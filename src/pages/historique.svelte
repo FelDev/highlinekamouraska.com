@@ -5,7 +5,7 @@
   import marked from "marked";
   import { getCMSData } from "./_components/GetCMSData.svelte"
   const cmsData = getCMSData($layout, "historique")
-  console.log('@cmsData: ', cmsData);
+  // console.log('@cmsData: ', cmsData);
 
   let version = "short";
 </script>
