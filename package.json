@@ -2,7 +2,7 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "dev": "run-p routify rollup",
+    "dev": "run-p routify nollup",
     "dev:nollup": "run-p routify nollup",
     "dev-dynamic": "cross-env BUNDLING=dynamic npm run dev",
     "build": "routify -b && rollup -c && routify export && workbox injectManifest",
@@ -30,6 +30,7 @@
     "rollup-plugin-svelte": "^5.2.3",
     "rollup-plugin-svelte-hot": "^0.10.0",
     "rollup-plugin-terser": "^6.1.0",
+    "spank": "^1.4.0",
     "spassr": "^1.1.2"
   },
   "dependencies": {
